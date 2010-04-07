@@ -1,0 +1,6 @@
+varying vec3 $lightDir, $normal;
+
+void main() {
+	float diffuse_value = max(dot($normal, $lightDir), 0.0);
+	gl_FragColor = vec4(gl_Color.rgb * diffuse_value, gl_Color.a);
+}

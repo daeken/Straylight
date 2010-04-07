@@ -1,0 +1,4 @@
+void main() {
+	float val = (0.5 - abs((gl_TexCoord[0].t - 0.5))) * 2.0;
+	gl_FragColor = vec4(gl_Color.rgb * val, val);
+}

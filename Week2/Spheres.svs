@@ -1,0 +1,16 @@
+uniform sampler2D $grid;
+varying vec3 $lightDir, $normal;
+
+void main()
+{
+	vec4 v = gl_ModelViewProjectionMatrix * vec4(gl_Vertex);
+	vec4 t = texture2D($grid, gl_Color.rg);
+	$normal = normalize(gl_NormalMatrix * gl_Normal);
+	$lightDir = normalize(vec3(gl_LightSource[0].position));
+	
+	v.y += t.w;
+	gl_FrontColor.rgb = t.xyz;
+	gl_FrontColor.a = 0.9;
+	
+	gl_Position = v;
+}

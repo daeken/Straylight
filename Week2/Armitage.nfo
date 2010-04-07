@@ -1,0 +1,37 @@
+                 Armitage by Straylight
+                    - April 2, 2010
+
+Week 2 of my demo-a-week project is upon us.  I tend to think this is a much
+better demo than the last one, even if it is short.  It has known compatibility
+issues (older ATI cards, like the one in my desktop, seem to dislike my vertex
+shaders...) and it'ss fairly short, but I like it a lot more than Waveride.
+
+I was planning on making this one cross-platform, but after dealing with tons
+of compatibility issues, I figure it's better for my mental health if I didn't.
+The source will be made available in case anyone feels like doing something fun
+with it.
+
+Waveride used Miriel by Nightbeat as its music, on suggestion from a friend of 
+mine.  Oddly enough, Nightbeat produced a song called Straylight -- I got the 
+name from Neuromancer, but I can only take that as a good sign.  Anyway, enough
+rambling.
+
+Compatibility:
+Tested on a GeForce 9400M, but should work with most modern cards.  Requires
+SM3.0 (I believe) and rendering to a floating point framebuffer object.  If it
+dies on start or you don't see the pretty spheres, one of those things is 
+likely the issue.
+
+Credits:
+Code and art by Daeken
+Music by Novoxide
+
+Greets to:
+ASD
+SVatG
+Conspiracy
+Fairlight
+Kewlers
+
+Until next time,
+- Daeken
